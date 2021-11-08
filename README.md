@@ -2,5 +2,8 @@
 Eric's FPGA or ASIC projects
 This is the test file.
 
-# Test
-测试是否能上传到GitHub
+# OpenMIPS
+参考教程: 自己动手写CPU
+
+# EDA Experiment
+大三上EDA理论课+实验课的工程
