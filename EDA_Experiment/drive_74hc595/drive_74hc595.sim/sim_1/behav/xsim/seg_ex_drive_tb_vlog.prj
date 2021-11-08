@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../drive_74hc595.srcs/sources_1/new/decode_bcd.v" \
+"../../../../drive_74hc595.srcs/sources_1/new/drive_74hc595.v" \
+"../../../../drive_74hc595.srcs/sources_1/new/seg_ex_drive.v" \
+"../../../../drive_74hc595.srcs/sim_1/new/seg_ex_drive_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

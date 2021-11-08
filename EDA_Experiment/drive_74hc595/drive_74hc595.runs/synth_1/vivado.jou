@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov  1 10:49:24 2021
+# Process ID: 9712
+# Current directory: D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.runs/synth_1
+# Command line: vivado.exe -log seg_ex_drive.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source seg_ex_drive.tcl
+# Log file: D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.runs/synth_1/seg_ex_drive.vds
+# Journal file: D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source seg_ex_drive.tcl -notrace

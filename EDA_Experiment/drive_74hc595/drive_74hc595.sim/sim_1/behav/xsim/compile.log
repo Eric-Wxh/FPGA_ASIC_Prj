@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/decode_bcd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/drive_74hc595.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module drive_74hc595
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/seg_ex_drive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_ex_drive
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/seg_ex_drive_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_ex_drive_tb

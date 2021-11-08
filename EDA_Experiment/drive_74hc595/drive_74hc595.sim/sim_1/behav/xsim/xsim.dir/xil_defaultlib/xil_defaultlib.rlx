@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/seg_ex_drive_tb.v,1635686356,verilog,,,,seg_ex_drive_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/test_drive_tb.v,1635597853,verilog,,,,test_drive_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/decode_bcd.v,1635731882,verilog,,D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/drive_74hc595.v,,decode_bcd,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/drive_74hc595.v,1635682675,verilog,,D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/seg_ex_drive.v,,drive_74hc595,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/seg_ex_drive.v,1635733073,verilog,,D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/seg_ex_drive_tb.v,,seg_ex_drive,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sources_1/new/test_drive.v,1635601733,verilog,,D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/test_drive_tb.v,,test_drive,,,,,,,,
