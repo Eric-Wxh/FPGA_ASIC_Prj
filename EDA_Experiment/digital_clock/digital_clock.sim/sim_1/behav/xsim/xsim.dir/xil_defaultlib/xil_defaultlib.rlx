@@ -1,0 +1,10 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/counter_1h_tb.v,1636468596,verilog,,,,counter_1h_tb,,,,,,,,
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/counter_1s_tb.v,1636466381,verilog,,,,counter_1s_tb,,,,,,,,
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sources_1/new/count_1s.v,1636465638,verilog,,D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sources_1/new/counter_1h.v,,count_1s,,,,,,,,
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sources_1/new/counter_1h.v,1636468300,verilog,,D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sources_1/new/counter_bcd_60.v,,counter_1h,,,,,,,,
+D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sources_1/new/counter_bcd_60.v,1636466618,verilog,,D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/counter_1h_tb.v,,counter_bcd_60,,,,,,,,

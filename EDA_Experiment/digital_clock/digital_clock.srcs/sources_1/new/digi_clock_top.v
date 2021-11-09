@@ -40,6 +40,13 @@ module digi_clock_top(
         .en()
     );
 
+    counter_1h counter_1h_inst(
+        .clk_100Hz(),
+        .rst_n(rst_n),
+        .count_en(),
+        .data_1h()
+    );
+
     seg_ex_drive disp_inst(
         .sys_clk(sys_clk),
         .rst_n(rst_n),
