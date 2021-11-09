@@ -1,0 +1,16 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/count_led_4_tb.v,1634716222,verilog,,,,count_led_4_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_byte_tb.v,1634653840,verilog,,,,uart_rx_byte_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_ctrl_led_tb.v,1634737438,verilog,,,,uart_rx_ctrl_led_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_tx_byte_tb.v,1633761149,verilog,,,,uart_tx_byte_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_tx_data_tb.v,1634135671,verilog,,,,uart_tx_data_tb,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/count_led_4.v,1634715898,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_cmd_0.v,,count_led_4,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_cmd_0.v,1634731699,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_rx_byte.v,,uart_cmd_0,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_rx_byte.v,1634655994,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_rx_ctrl_led.v,,uart_rx_byte,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_rx_ctrl_led.v,1634735515,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_ctrl_led_tb.v,,uart_rx_ctrl_led,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_tx_byte.v,1633867501,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_tx_data.v,,uart_tx_byte,,,,,,,,
+D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sources_1/new/uart_tx_data.v,1633933270,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_tx_data_tb.v,,uart_tx_data,,,,,,,,

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.sim/sim_1/synth/timing/xsim/uart_rx_ctrl_led_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_led_4
+INFO: [VRFC 10-311] analyzing module uart_cmd_0
+INFO: [VRFC 10-311] analyzing module uart_rx_byte
+INFO: [VRFC 10-311] analyzing module uart_rx_ctrl_led
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_ctrl_led_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_ctrl_led_tb

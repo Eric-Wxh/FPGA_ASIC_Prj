@@ -1,0 +1,30 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado_ML_2021/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto fff8b8bc5f134e97972c9b1c81990fb2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot uart_tx_byte_tb_func_impl xil_defaultlib.uart_tx_byte_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.FDPE_default
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.uart_tx_byte
+Compiling module xil_defaultlib.uart_tx_byte_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot uart_tx_byte_tb_func_impl
