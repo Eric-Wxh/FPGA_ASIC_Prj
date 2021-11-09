@@ -12,4 +12,4 @@ Discription：多功能数字时钟
 Module Name: seg_ex_drive.v
 Engineer Name: Eric Wong
 
-Description: 8位数码管LED驱动
+Description: 8位数码管LED驱动,其中6位显示数字，两位显示"-"用于间隔

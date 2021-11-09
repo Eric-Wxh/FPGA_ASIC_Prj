@@ -27,7 +27,18 @@ module digi_clock_top(
     output rclk,                //锁存时钟输出
     output srclk                //移位寄存时钟输出
     );
+    clk_div clk_div_inst(
+        .sys_clk(sys_clk),
+        .rst_n(rst_n),
+        .clk_100Hz()
+    );
 
+    counter_enable counter_enable_inst(
+        .sys_clk(sys_clk),
+        .rst_n(rst_n),
+        .key_in(),
+        .en()
+    );
 
     seg_ex_drive disp_inst(
         .sys_clk(sys_clk),
