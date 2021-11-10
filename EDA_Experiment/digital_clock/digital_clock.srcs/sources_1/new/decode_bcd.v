@@ -14,7 +14,8 @@ module decode_bcd (
             4'd7: seg = 8'h1f;          //7
             4'd8: seg = 8'h01;          //8
             4'd9: seg = 8'h09;          //9
-            default: seg = 8'hfd;       //-
+            4'ha: seg = 8'hfd;          //-
+            default: seg = 8'hff;       //无显示
         endcase
     end
     

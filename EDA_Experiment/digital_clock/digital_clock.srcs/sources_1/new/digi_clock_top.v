@@ -59,7 +59,7 @@ module digi_clock_top(
     key_filter key_filter_inst (
         .sys_clk(sys_clk),
         .rst_n(rst_n),
-        .key(),
+        .key(),                     //如果要用Zynq, 按键输入信号无需取反; 如果用Basys2, 按键输入需要取反
         .key_out(),
         .key_p_flag(),
         .key_r_flag()
