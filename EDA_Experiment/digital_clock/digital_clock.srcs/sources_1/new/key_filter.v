@@ -9,7 +9,7 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
+// Description: 按键抬起时为低电平，按下后为高电平
 // 
 // Dependencies: 
 // 
