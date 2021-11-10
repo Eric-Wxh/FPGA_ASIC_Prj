@@ -159,7 +159,7 @@ module seg_ex_drive(
             cnt_data <= 0;
     end
 
-    //数据选择
+    //数据选择，先发送低位的数据
     always @(*) begin
         case (cnt_data)
             3'd0: data_sel = data_in_reg[0];
@@ -174,17 +174,17 @@ module seg_ex_drive(
         endcase
     end
 
-    //译码输出
+    //译码输出,上板时还需测试数码管位的顺序是否正确，前8位是位码，最先发送的是低位数码管;段码dp~a为高到低
     always @(*) begin
         case (cnt_data)
-            3'd0: data_disp = {8'b1111_1110,data_decode};
-            3'd1: data_disp = {8'b1111_1101,data_decode};
-            3'd2: data_disp = {8'b1111_1011,data_decode};
-            3'd3: data_disp = {8'b1111_0111,data_decode};
-            3'd4: data_disp = {8'b1110_1111,data_decode};
-            3'd5: data_disp = {8'b1101_1111,data_decode};
-            3'd6: data_disp = {8'b1011_1111,data_decode};
-            3'd7: data_disp = {8'b0111_1111,data_decode};
+            3'd0: data_disp = {8'b01111_111,data_decode};
+            3'd1: data_disp = {8'b1011_1111,data_decode};
+            3'd2: data_disp = {8'b1101_1111,data_decode};
+            3'd3: data_disp = {8'b1110_1111,data_decode};
+            3'd4: data_disp = {8'b1111_0111,data_decode};
+            3'd5: data_disp = {8'b1111_1011,data_decode};
+            3'd6: data_disp = {8'b1111_1101,data_decode};
+            3'd7: data_disp = {8'b1111_1110,data_decode};
             default: data_disp = 16'hffff;
         endcase
     end

@@ -2,12 +2,12 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Nov 10 16:15:01 2021
-# Process ID: 23092
+# Start of session at: Wed Nov 10 19:46:16 2021
+# Process ID: 11008
 # Current directory: D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/xsim.dir/data_store_read_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/xsim.dir/digi_clock_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/xsim.dir/data_store_read_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Wed Nov 10 16:15:01 2021...
+source D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.sim/sim_1/behav/xsim/xsim.dir/digi_clock_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 10 19:46:16 2021...

@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../digital_clock.srcs/sources_1/new/clk_div.v" \
+"../../../../digital_clock.srcs/sources_1/new/count_1s.v" \
+"../../../../digital_clock.srcs/sources_1/new/counter_1h.v" \
+"../../../../digital_clock.srcs/sources_1/new/counter_bcd_60.v" \
+"../../../../digital_clock.srcs/sources_1/new/counter_enable.v" \
+"../../../../digital_clock.srcs/sources_1/new/data_store_read.v" \
+"../../../../digital_clock.srcs/sources_1/new/decode_bcd.v" \
+"../../../../digital_clock.srcs/sources_1/new/digi_clock_top.v" \
+"../../../../digital_clock.srcs/sources_1/new/disp_ctrl.v" \
+"../../../../digital_clock.srcs/sources_1/new/drive_74hc595.v" \
+"../../../../digital_clock.srcs/sources_1/new/key_filter.v" \
+"../../../../digital_clock.srcs/sources_1/new/seg_ex_drive.v" \
+"../../../../digital_clock.srcs/sim_1/new/digi_clock_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

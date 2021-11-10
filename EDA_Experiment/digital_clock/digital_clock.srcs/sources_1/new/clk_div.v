@@ -26,7 +26,7 @@ module clk_div(
     output reg clk_100Hz
     );
     reg [18:0] cnt;
-    parameter MCNT = 249999;
+    parameter MCNT = 250000;
 
     always @(posedge sys_clk or negedge rst_n) begin
         if (!rst_n)

@@ -179,7 +179,7 @@ module drive_74hc595 #(Width = 16)      //数据位宽为16位
             cnt_bit <= 0;
     end
 
-    //数据分时输出, 要根据位宽进行修改
+    //数据分时输出, 要根据位宽进行修改,先发送高位数据，后发送低位数据
     assign data_ser = data_in_reg[Width-1-cnt_bit];
 
     //移位寄存器时钟输出控制

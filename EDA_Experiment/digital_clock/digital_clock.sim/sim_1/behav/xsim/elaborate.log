@@ -1,6 +1,6 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: E:/Vitis_2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0ee70b639f45402c908df3fc7f587978 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot data_store_read_tb_behav xil_defaultlib.data_store_read_tb xil_defaultlib.glbl -log elaborate.log 
+Running: E:/Vitis_2021.1/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 0ee70b639f45402c908df3fc7f587978 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot digi_clock_tb_behav xil_defaultlib.digi_clock_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,7 +8,18 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.counter_enable
+Compiling module xil_defaultlib.count_1s
+Compiling module xil_defaultlib.counter_bcd_60
+Compiling module xil_defaultlib.counter_1h
+Compiling module xil_defaultlib.drive_74hc595
+Compiling module xil_defaultlib.decode_bcd
+Compiling module xil_defaultlib.seg_ex_drive
+Compiling module xil_defaultlib.disp_ctrl
 Compiling module xil_defaultlib.data_store_read
-Compiling module xil_defaultlib.data_store_read_tb
+Compiling module xil_defaultlib.key_filter
+Compiling module xil_defaultlib.digi_clock_top
+Compiling module xil_defaultlib.digi_clock_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot data_store_read_tb_behav
+Built simulation snapshot digi_clock_tb_behav

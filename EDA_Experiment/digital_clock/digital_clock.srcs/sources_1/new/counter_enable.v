@@ -24,15 +24,21 @@ module counter_enable(
     input sys_clk,
     input rst_n,
     input key_in,
+    input mode,
     output reg en
     );
     always @(posedge sys_clk or negedge rst_n) begin
         if (!rst_n)
             en <= 0;
 
-        else if (key_in)
-            en <= ~en;
+        else if (!mode) begin           //在计时模式，按开始/停止按键可以控制计时器的启停
+            if (key_in)
+                en <= ~en;
 
+            else
+                en <= en;
+        end
+            
         else
             en <= en;
     end

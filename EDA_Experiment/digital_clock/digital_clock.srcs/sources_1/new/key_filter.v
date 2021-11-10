@@ -34,7 +34,8 @@ module key_filter(
     reg [19:0] cnt;
     reg [1:0] state_n;
     reg [1:0] state_c;
-    parameter MCNT = 1000000;
+    //parameter MCNT = 1000000;
+    parameter MCNT = 10;
 
     reg [1:0] key_out_reg;
     wire key_out_pedge, key_out_nedge;
@@ -86,7 +87,7 @@ module key_filter(
                     if ((cnt >= MCNT-1) && (~p_edge))
                         state_n = WAIT_R;
 
-                    else if ((cnt < MCNT - 1) && p_edge)
+                    else if ((cnt <= MCNT - 1) && p_edge)
                         state_n = IDLE;
 
                     else
@@ -105,7 +106,7 @@ module key_filter(
                     if ((cnt >= MCNT - 1) && (~n_edge))
                         state_n = IDLE;
                     
-                    else if((cnt < MCNT - 1) && n_edge)
+                    else if((cnt <= MCNT - 1) && n_edge)
                         state_n = WAIT_R;
 
                     else

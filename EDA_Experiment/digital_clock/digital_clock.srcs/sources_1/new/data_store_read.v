@@ -22,9 +22,9 @@
 module data_store_read(
     input sys_clk,
     input rst_n,
-    input key_sta_sto,
-    input key_store,                    //控制存储按键
-    input key_read,                     //控制读取按键
+    input sta_sto_flag,
+    input store_flag,                    //控制存储按键
+    input read_flag,                     //控制读取按键
     input [31:0] data_in,               //待读取的实时时刻
     output [31:0] store_data_disp,
     output reg disp_mode                //显示模式选择，选择显示当前计时值和历史计时值
@@ -57,7 +57,7 @@ module data_store_read(
         end
 
         else if (!disp_mode) begin
-            if (key_store) begin               //按下存储按键，若存取了16组数据以上，则停止存取
+            if (store_flag) begin               //按下存储按键，若存取了16组数据以上，则停止存取
                 if (store_cnt < 16) begin
                     data_reg[0] <= data_reg[1];
                     data_reg[1] <= data_reg[2];
@@ -123,7 +123,7 @@ module data_store_read(
         if (!rst_n)
             store_cnt <= 0;
 
-        else if (key_store) begin
+        else if (store_flag) begin
             if (16 <= store_cnt)
                 store_cnt <= 16;
 
@@ -143,7 +143,7 @@ module data_store_read(
             read_cnt <= 15;
 
         else if (disp_mode) begin                       //当disp_mode=1时，可以选择查看历史数据
-            if (key_sta_sto) begin              //当按下开始/停止按键时，按照顺序显示历史数据
+            if (sta_sto_flag) begin              //当按下开始/停止按键时，按照顺序显示历史数据
                 if (read_cnt >= 15) begin
                     if (store_cnt == 0)
                         read_cnt <= 15;
@@ -169,7 +169,7 @@ module data_store_read(
         if (!rst_n)
             disp_mode <= 0;
 
-        else if (key_read)
+        else if (read_flag)
             disp_mode <= ~disp_mode;
 
         else
