@@ -22,7 +22,10 @@
 
 module digi_clock_top(
     input sys_clk,
-    input rst_n,
+    input key_sta_sto,
+    input key_rst,
+    input key_store,
+    input key_read,
     output data_ser,            //595驱动数据数据输出
     output rclk,                //锁存时钟输出
     output srclk                //移位寄存时钟输出
@@ -47,7 +50,7 @@ module digi_clock_top(
         .data_1h()
     );
 
-    seg_ex_drive disp_inst(
+    disp_ctrl disp_ctrl_inst(
         .sys_clk(sys_clk),
         .rst_n(rst_n),
         .data_in(),
