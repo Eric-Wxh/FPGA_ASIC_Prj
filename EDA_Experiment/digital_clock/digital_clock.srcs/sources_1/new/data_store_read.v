@@ -22,13 +22,17 @@
 module data_store_read(
     input sys_clk,
     input rst_n,
+    input key_sta_sto,
     input key_store,                    //控制存储按键
     input key_read,                     //控制读取按键
-    input [31:0] data_in,
-    output [31:0] store_data_disp
+    input [31:0] data_in,               //待读取的实时时刻
+    output [31:0] store_data_disp,
+    output reg disp_mode                //显示模式选择，选择显示当前计时值和历史计时值
 );
     reg [31:0] data_reg[15:0];          //存储16位数据
     reg [4:0] store_cnt;                //记录存储数据的个数
+
+    reg [4:0] read_cnt;                 //选择查看的数据
 
     //--------------------------------<数据存储>----------------------------------//
     //按键按下时，存储数据
@@ -52,24 +56,65 @@ module data_store_read(
             data_reg[15] <= 32'h00000000;
         end
 
-        else if (key_store) begin               //按下存储按键，若存取了16组数据以上，则停止存取
-            if (store_cnt < 16)
-            data_reg[0] <= data_reg[1];
-            data_reg[1] <= data_reg[2];
-            data_reg[2] <= data_reg[3];
-            data_reg[3] <= data_reg[4];
-            data_reg[4] <= data_reg[5];
-            data_reg[5] <= data_reg[6];
-            data_reg[6] <= data_reg[7];
-            data_reg[7] <= data_reg[8];
-            data_reg[8] <= data_reg[9];
-            data_reg[9] <= data_reg[10];
-            data_reg[10] <= data_reg[11];
-            data_reg[11] <= data_reg[12];
-            data_reg[12] <= data_reg[13];
-            data_reg[13] <= data_reg[14];
-            data_reg[14] <= data_reg[15];
-            data_reg[15] <= data_in;
+        else if (!disp_mode) begin
+            if (key_store) begin               //按下存储按键，若存取了16组数据以上，则停止存取
+                if (store_cnt < 16) begin
+                    data_reg[0] <= data_reg[1];
+                    data_reg[1] <= data_reg[2];
+                    data_reg[2] <= data_reg[3];
+                    data_reg[3] <= data_reg[4];
+                    data_reg[4] <= data_reg[5];
+                    data_reg[5] <= data_reg[6];
+                    data_reg[6] <= data_reg[7];
+                    data_reg[7] <= data_reg[8];
+                    data_reg[8] <= data_reg[9];
+                    data_reg[9] <= data_reg[10];
+                    data_reg[10] <= data_reg[11];
+                    data_reg[11] <= data_reg[12];
+                    data_reg[12] <= data_reg[13];
+                    data_reg[13] <= data_reg[14];
+                    data_reg[14] <= data_reg[15];
+                    data_reg[15] <= data_in;
+                end
+
+                else begin
+                    data_reg[0] <= data_reg[0];
+                    data_reg[1] <= data_reg[1];
+                    data_reg[2] <= data_reg[2];
+                    data_reg[3] <= data_reg[3];
+                    data_reg[4] <= data_reg[4];
+                    data_reg[5] <= data_reg[5];
+                    data_reg[6] <= data_reg[6];
+                    data_reg[7] <= data_reg[7];
+                    data_reg[8] <= data_reg[8];
+                    data_reg[9] <= data_reg[9];
+                    data_reg[10] <= data_reg[10];
+                    data_reg[11] <= data_reg[11];
+                    data_reg[12] <= data_reg[12];
+                    data_reg[13] <= data_reg[13];
+                    data_reg[14] <= data_reg[14];
+                    data_reg[15] <= data_reg[15];
+                end
+            end
+
+            else begin
+                data_reg[0] <= data_reg[0];
+                data_reg[1] <= data_reg[1];
+                data_reg[2] <= data_reg[2];
+                data_reg[3] <= data_reg[3];
+                data_reg[4] <= data_reg[4];
+                data_reg[5] <= data_reg[5];
+                data_reg[6] <= data_reg[6];
+                data_reg[7] <= data_reg[7];
+                data_reg[8] <= data_reg[8];
+                data_reg[9] <= data_reg[9];
+                data_reg[10] <= data_reg[10];
+                data_reg[11] <= data_reg[11];
+                data_reg[12] <= data_reg[12];
+                data_reg[13] <= data_reg[13];
+                data_reg[14] <= data_reg[14];
+                data_reg[15] <= data_reg[15];
+            end
         end
     end
 
@@ -91,5 +136,43 @@ module data_store_read(
     end
 
     //--------------------------------<数据读取>----------------------------------//
-    
+    assign store_data_disp = data_reg[read_cnt[3:0]];
+
+    always @(posedge sys_clk or negedge rst_n) begin
+        if (!rst_n)
+            read_cnt <= 15;
+
+        else if (disp_mode) begin                       //当disp_mode=1时，可以选择查看历史数据
+            if (key_sta_sto) begin              //当按下开始/停止按键时，按照顺序显示历史数据
+                if (read_cnt >= 15) begin
+                    if (store_cnt == 0)
+                        read_cnt <= 15;
+                    
+                    else
+                        read_cnt <= 16 - store_cnt;
+                end
+
+                else
+                    read_cnt <= read_cnt + 1;
+            end
+
+            else
+                read_cnt <= read_cnt;
+        end
+
+        else
+            read_cnt <= read_cnt;
+    end
+
+    //读取按键，可以控制显示模式
+    always @(posedge sys_clk or negedge rst_n) begin
+        if (!rst_n)
+            disp_mode <= 0;
+
+        else if (key_read)
+            disp_mode <= ~disp_mode;
+
+        else
+            disp_mode <= disp_mode;
+    end
 endmodule

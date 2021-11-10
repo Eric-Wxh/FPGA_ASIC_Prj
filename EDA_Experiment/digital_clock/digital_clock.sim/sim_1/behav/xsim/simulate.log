@@ -1,3 +1,3 @@
 Time resolution is 1 ps
-$stop called at time : 10017501 ns : File "D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/counter_1h_tb.v" Line 62
-$stop called at time : 10017501 ns : File "D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/counter_1h_tb.v" Line 62
+$stop called at time : 10561 ns : File "D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/data_store_read_tb.v" Line 121
+$stop called at time : 10561 ns : File "D:/Electronic_Design/Digital_Design_and_IC/IC_Prj/FPGA_ASIC_Prj/FPGA_ASIC_Prj/EDA_Experiment/digital_clock/digital_clock.srcs/sim_1/new/data_store_read_tb.v" Line 121

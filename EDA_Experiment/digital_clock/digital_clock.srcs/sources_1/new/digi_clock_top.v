@@ -56,6 +56,17 @@ module digi_clock_top(
         .srclk(srclk)
     );
 
+    data_store_read data_store_read_inst(
+        .sys_clk(sys_clk),
+        .rst_n(rst_n),
+        .key_sta_sto(),
+        .key_store(),
+        .key_read(),
+        .data_in(),
+        .store_data_disp(),
+        .disp_mode()
+    );
+
     key_filter key_filter_inst (
         .sys_clk(sys_clk),
         .rst_n(rst_n),
