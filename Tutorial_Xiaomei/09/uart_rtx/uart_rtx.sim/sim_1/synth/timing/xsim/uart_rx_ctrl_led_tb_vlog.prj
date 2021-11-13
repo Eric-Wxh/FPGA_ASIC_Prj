@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"uart_rx_ctrl_led_tb_time_synth.v" \
-"../../../../../uart_rtx.srcs/sim_1/new/uart_rx_ctrl_led_tb.v" \
-
-# Do not sort compile order
-nosort

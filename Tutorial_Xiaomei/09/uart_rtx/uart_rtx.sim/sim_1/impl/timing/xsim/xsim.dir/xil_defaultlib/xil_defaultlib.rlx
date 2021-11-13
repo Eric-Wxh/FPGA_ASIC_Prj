@@ -1,8 +1,0 @@
-0.7
-2020.2
-Jun 10 2021
-20:04:57
-D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.sim/sim_1/impl/timing/xsim/uart_rx_byte_tb_time_impl.v,1634691588,verilog,,D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_byte_tb.v,,glbl;uart_rx_byte,,,,,,,,
-D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_rx_byte_tb.v,1634653840,verilog,,,,uart_rx_byte_tb,,,,,,,,
-D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_tx_byte_tb.v,1633761149,verilog,,,,uart_tx_byte_tb,,,,,,,,
-D:/Electronic_Design/Project/Digital_Design/Tutorial_Xiaomei/09/uart_rtx/uart_rtx.srcs/sim_1/new/uart_tx_data_tb.v,1633915056,verilog,,,,uart_tx_data_tb,,,,,,,,
