@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.sim/sim_1/synth/timing/xsim/seg_ex_drive_tb_time_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module drive_74hc595
-INFO: [VRFC 10-311] analyzing module seg_ex_drive
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Electronic_Design/Project/Digital_Design/EDA_theory/drive_74hc595/drive_74hc595.srcs/sim_1/new/seg_ex_drive_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module seg_ex_drive_tb

@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"test_drive_tb_func_impl.v" \
-"../../../../../drive_74hc595.srcs/sim_1/new/test_drive_tb.v" \
-
-# Do not sort compile order
-nosort

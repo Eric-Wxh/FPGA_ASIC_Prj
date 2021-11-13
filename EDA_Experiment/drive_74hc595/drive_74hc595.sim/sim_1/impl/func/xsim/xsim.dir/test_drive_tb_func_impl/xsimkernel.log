@@ -1,7 +1,0 @@
-Running: xsim.dir/test_drive_tb_func_impl/xsimk.exe -simmode gui -wdb test_drive_tb_func_impl.wdb -simrunnum 0 -socket 51141
-Design successfully loaded
-Design Loading Memory Usage: 7392 KB (Peak: 7392 KB)
-Design Loading CPU Usage: 61 ms
-Simulation completed
-Simulation Memory Usage: 8292 KB (Peak: 8292 KB)
-Simulation CPU Usage: 203 ms
