@@ -156,16 +156,32 @@ module fifo_sync0 #(
             fifo_cnt <= fifo_cnt;
     end
 
-    //FIFO空满指示信号控制
-    always @(*) begin
+    //FIFO空满指示信号控制,此处加入了寄存器，优化了组合逻辑，从而既不延迟节拍，又能消除毛刺
+    always @(posedge sys_clk) begin
         if (srst)
             {fifo_full,fifo_empty} <= 2'b00;
 
         else if (fifo_cnt[Width_addr])
             {fifo_full,fifo_empty} <= 2'b10;
 
+        else if (fifo_cnt == Depth-1) begin
+            if (fifo_wr_en)
+                {fifo_full,fifo_empty} <= 2'b10;
+    
+            else
+                {fifo_full,fifo_empty} <= 2'b00;
+        end
+
         else if (fifo_cnt == 0)
             {fifo_full,fifo_empty} <= 2'b01;
+
+        else if (fifo_cnt == 1) begin
+            if (fifo_rd_en)
+                {fifo_full,fifo_empty} <= 2'b01;
+    
+            else
+                {fifo_full,fifo_empty} <= 2'b00;
+        end
 
         else
             {fifo_full,fifo_empty} <= 2'b00;
