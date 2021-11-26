@@ -161,22 +161,32 @@ module fifo_sync0 #(
         if (srst)
             {fifo_full,fifo_empty} <= 2'b00;
 
-        else if (fifo_cnt[Width_addr])
-            {fifo_full,fifo_empty} <= 2'b10;
+        else if (fifo_cnt[Width_addr]) begin
+            if (fifo_rd_en && ~(fifo_wr_en))
+                {fifo_full,fifo_empty} <= 2'b00;
+    
+            else
+                {fifo_full,fifo_empty} <= 2'b10;
+        end
 
         else if (fifo_cnt == Depth-1) begin
-            if (fifo_wr_en)
+            if (fifo_wr_en && ~(fifo_rd_en))
                 {fifo_full,fifo_empty} <= 2'b10;
     
             else
                 {fifo_full,fifo_empty} <= 2'b00;
         end
 
-        else if (fifo_cnt == 0)
-            {fifo_full,fifo_empty} <= 2'b01;
+        else if (fifo_cnt == 0) begin
+            if (fifo_wr_en && ~(fifo_rd_en))
+                {fifo_full,fifo_empty} <= 2'b00;
+
+            else
+                {fifo_full,fifo_empty} <= 2'b01;
+        end
 
         else if (fifo_cnt == 1) begin
-            if (fifo_rd_en)
+            if (fifo_rd_en && ~(fifo_wr_en))
                 {fifo_full,fifo_empty} <= 2'b01;
     
             else
